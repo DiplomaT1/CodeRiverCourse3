@@ -1,0 +1,48 @@
+<header class="header">
+	<div class="hero">
+		<div class="container">
+			<div class="top-header">
+				<div class="top-header__logo">
+					<div class="logo">
+						<a href="#" title=""><h1>SuperCompany</h1></a>
+					</div>
+				</div>
+				<div class="top-header__search">
+					<div class="search">
+						<input type="search" id="search" placeholder="Search" />
+						<span class="search__icon">{{mixins.icon('magnifying-glass')}}</span>
+					</div>
+				</div>
+				<div class="top-header__settings">
+					{{mixins.icon('cogwheel')}}<a href="#" title="">Advanced</a>
+				</div>
+				<div class="user">
+					<div class="user__icon">{{mixins.icon('house-frame')}}</div>
+					<a class="user__mail" href="#" title="">emma.davidson@caterptillar.com</a>
+					<div class="user__button">
+						<div class="common-btn"><a href="#" title="">Log out</a></div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<div class="hero">
+		<div class="container">
+			<input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+			<label for="drawer-toggle" class="drawer-toggle-label"></label>
+			<nav class="menu drawer" role="navigation">
+				<a class="is-active" href="#">Home</a>
+				<a href="#"><span>{{mixins.icon('house-frame')}}</span>My Docushare</a>
+				<a href="#"><span>{{mixins.icon('layers-2')}}</span>My tasks</a>
+				<a href="#"><span>{{mixins.icon('star')}}</span>My favorites</a>
+				<a href="#"><span>{{mixins.icon('interface')}}</span>Recent</a>
+				<div class="jobs-counter">
+					<a href="#">{{mixins.icon('web')}}BACKGROUND JOBS</a>
+					<div class="counter"><a href="#">8</a></div>
+				</div>
+			</nav>
+			
+		</div>
+	</div>
+</header>

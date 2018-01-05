@@ -1,0 +1,100 @@
+body
+	font-family: Roboto
+
+.container
+	margin-right: auto
+	margin-left: auto
+	padding-left: 10px
+	padding-right: 10px
+
+	+rmin(200)
+		width: 200px
+	+rmin(320)
+		width: 100%
+	+rmin(1600)
+		width: 1249px
+		
+.container--flex
+	+flex
+	-webkit-flex-wrap: wrap 
+	-ms-flex-wrap: wrap 
+	flex-wrap: wrap 
+	
+.col-1
+	
+	+rmin(320)
+		width: 100%
+		-webkit-order: 2 
+		-ms-order: 2 
+		order: 2 
+		
+	+rmin(480)
+		border-right: 1px solid #dcdee0
+		width: 47%
+		padding-bottom: 15px
+		-webkit-order: 1 
+		-ms-order: 1 
+		order: 1 
+		
+	+rmin(920)
+		width: 32%
+		
+	+rmin(1300)
+		width: 395px
+		min-height: 400px
+		
+	+rmin(1600)
+		min-height: 700px
+	
+.col-2
+	margin-left: 10px
+	
+	+rmin(320)
+		width: 100%
+		margin-right: 10px
+		-webkit-order: 3 
+		-ms-order: 3 
+		order: 3 
+		
+	+rmin(480)
+		width: 47%
+		padding-bottom: 15px
+		-webkit-order: 2
+		-ms-order: 2
+		order: 2
+		
+	+rmin(920)
+		width: 32%
+		
+	+rmin(1600)
+		margin-right: 5px
+		width: 410px
+
+.col-3
+	+rmin(320)
+
+		width: 100%
+		-webkit-order: 1 
+		-ms-order: 1 
+		order: 1 
+		
+	+rmin(480)
+		padding-bottom: 15px
+		-webkit-order: 3
+		-ms-order: 3
+		order: 3
+		
+	+rmin(920)
+		width: 32%
+		
+	+rmin(1600)
+		padding-bottom: 0
+		width: 409px
+		
+	.post
+		border-left: 1px solid #dcdee0
+
+a 
+    color: #000
+    text-decoration: none
+    

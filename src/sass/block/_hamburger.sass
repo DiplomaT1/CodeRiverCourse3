@@ -1,0 +1,91 @@
+#drawer-toggle 
+	position: absolute
+	opacity: 0
+	
++r(700)	
+	.drawer-toggle-label 
+		-webkit-touch-callout: none
+		-webkit-user-select: none
+		-khtml-user-select: none
+		-moz-user-select: none
+		-ms-user-select: none
+		user-select: none
+		left: 0
+		top: 0
+		height: 50px
+		width: 50px
+		display: block
+		position: absolute
+		background: rgba(255,255,255,.0)
+		z-index: 1
+
+
+	/* adds our "hamburger" menu icon */ 
+
+	.drawer-toggle-label:before 
+		content: ''
+		display: block
+		position: absolute
+		height: 2px
+		width: 24px
+		background: #8d8d8d
+		left: 13px
+		top: 18px
+		box-shadow: 0 6px 0 #8d8d8d, 0 12px 0 #8d8d8d
+
+	/* drawer menu pane - note the 0px width */ 
+
+	.drawer 
+		position: fixed
+		top: 0 
+		left: -300px
+		height: 100%
+		width: 275px
+		background: #2f2f2f
+		overflow-x: hidden
+		overflow-y: scroll
+		padding: 20px
+		-webkit-overflow-scrolling: touch
+		z-index: 112 
+		transition: all 0.5s ease-out
+		+rmin(480)
+			width: 300px
+
+	/* checked styles (menu open state) */ 
+
+	#drawer-toggle:checked
+		&~.drawer-toggle-label  
+			height: 100%
+			width: calc(100% - 275px)
+			background: rgba(255,255,255,.8)
+			transition: all 0.5s ease-out
+
+
+	#drawer-toggle:checked 
+		&~.drawer-toggle-label
+			+rmin(320)
+				left: 275px
+			+rmin(480)
+				left: 300px
+
+
+	#drawer-toggle:checked 
+		&~.drawer
+			left: 0px
+
+	/* Menu item styles */ 
+
+	.drawer 
+		a 
+			display: block
+			padding: 10px
+			color: #c7c7c7
+			text-decoration: none
+
+
+	.drawer 
+		a
+			&:hover  
+				color:white 
+
+

@@ -1,0 +1,217 @@
+.header
+	margin-top: 10px
+	
+.hero
+	border-bottom: 1px solid #dcdee0
+	
+.top-header
+	+flex
+	padding-bottom: 8px
+	-webkit-flex-wrap: wrap 
+	-ms-flex-wrap: wrap 
+	flex-wrap: wrap 
+	.user
+		+rmin(480)
+			margin-left: auto
+		+rmin(1380)
+			margin-left: 54px
+		
+.logo
+	color: #000203
+	h1	
+		font-weight: 400 
+
+.top-header__logo
+	letter-spacing: 0.3px
+	+rmin(320)
+		padding-left: 40px
+		font-size: 16px
+	+rmin(850)
+		padding-left: 26px
+		font-size: 19px
+	
+.search	
+	border: 1px solid #dcdee0
+	background-color: #ffffff
+	
+	input
+		padding-left: 14px
+		font-size: 12px
+		color: #2e3236
+		font-family: Roboto
+
+.top-header__search
+	margin-left: 26px
+	margin-top: 7px
+	position: relative
+	
+	.search
+		input			
+			height: 30px
+			+rmin(320)
+				width: 130px
+			+rmin(710)
+				width: 230px
+			+rmin(920)	
+				width: 409px
+											
+		.search__icon
+			height: 30px			
+			svg
+				margin-top: 7px
+				margin-left: 7px
+				margin-right: 7px 
+		
+.search__icon
+	border-left: 1px solid #dcdee0
+	float: right
+	cursor: pointer	
+
+.top-header__settings
+	-webkit-align-self: center 
+	align-self: center 
+	+rmin(320)
+		padding-top: 15px
+		padding-bottom: 15px
+		margin-left: auto
+		
+	+rmin(480)
+		margin-right: auto
+	+rmin(980)
+		margin-right: 0
+		margin-left: 16px
+		
+	a
+		font-size: 12px
+		color: #0a4f8b
+		font-weight: 400 
+		font-family: Roboto Regular 
+		padding-left: 30px
+		display: block
+	svg
+		position: absolute
+		
+.user
+	+flex
+	-webkit-flex-wrap: wrap
+	 -ms-flex-wrap: wrap
+	 flex-wrap: wrap 
+	-webkit-align-items: center
+	align-items: center
+	
+.user__button
+	margin-left: 12px
+	width: 59px
+	height: 21px
+	font-size: 10px
+	+rmin(320)
+		margin-top: 7px
+	+rmin(480)
+		margin-top: 0
+
+.user__mail
+	color: #2e3236
+	font-size: 12px
+	padding-left: 14px
+		
+.user__icon
+	+flex
+	-webkit-align-items: center
+	align-items: center
+	-webkit-justify-content: center
+	justify-content: center
+	background-color: #edeff1
+	height: 37px
+	width: 37px
+	-webkit-border-radius: 50% 
+	border-radius: 50% 
+
+.menu
+	
+	+rmin(700)
+		-webkit-flex-wrap: wrap
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		+flex
+	+rmin(1100)
+		border-right: 1px solid #dcdee0
+		border-left: 1px solid #dcdee0
+		-webkit-flex-wrap: nowrap
+		-ms-flex-wrap: nowrap
+		flex-wrap: nowrap
+	&>a
+		text-align: center
+		padding-top: 17px
+		padding-bottom: 15px
+		padding-right: 8px
+		text-transform: uppercase
+		font-size: 12px
+		color: #2e3236
+		position: relative
+		&:hover
+			color: #2002ee
+		+rmin(320)
+			margin-right: 25px
+		+rmin(920)
+			margin-right: 49px
+		
+	svg
+		height: 1.25em
+		width: 1.25em
+		position: absolute
+		
+		+rmin(320)
+			fill: #fff
+			top: 24%
+			left: 15%
+		+rmin(700)
+			fill: initial
+			left: -20px
+			top: 33%
+		+rmin(1100)
+			left: -25px
+		
+	.is-active
+		background-color: #383e42
+
+		color: #FFF
+		&:hover
+			background-color: #383E61
+			color: #FFF 
+		+rmin(700)
+			width: 120px 
+		
+
+
+.jobs-counter
+	+rmin(700)
+		+flex
+		margin-left: auto
+	a
+		text-align: center
+		padding-top: 17px
+		padding-bottom: 15px
+		margin-right: 13px
+		
+		text-transform: uppercase
+		font-size: 12px
+		color: #2e3236
+		position: relative
+		&:hover
+			color: #2002ee
+.counter
+	display: block
+	font-size: 4px
+	border-radius: 6px
+	background-color: #ff5f4b	
+	a
+		font-size: 10px
+		margin-left: 5px
+		color: #FFF
+		
+	+rmin(700)
+		width: 16px
+		height: 13px
+		margin-right: 20px
+		margin-top: 17px
+		

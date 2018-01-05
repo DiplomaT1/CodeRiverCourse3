@@ -1,0 +1,80 @@
+.slider
+	position: relative	
+
+.slider__slide
+	background-color: #edeff1
+	padding: 22px 17px 15px 26px 
+	
+.slider__icon
+	float: right
+	padding-top: 6px
+
+	svg
+		fill: #959da3
+		width: 2.1em
+		height: 2.1em
+		
+.username
+	+flex
+
+.username__name
+	margin-left: 11px
+	margin-top: 2px
+	
+	h4
+		color: #383e42
+		font-size: 18px
+		letter-spacing: 0.36px
+		font-weight: 400 
+	a
+		color: #0a4f8b
+		font-size: 13px
+		letter-spacing: 0.26px
+		
+.slider__text
+	color: #60686f
+	font-size: 16px
+	letter-spacing: 0.32px
+	padding-left: 3px
+	padding-top: 35px
+	padding-bottom: 42px
+	word-wrap: break-word	
+
+.meta
+	+flex
+
+.meta__icon
+	svg
+		fill: #959da3
+		width: 1.4em
+		height: 1.4em
+		&:hover
+			fill: #000
+
+.meta__date
+	font-size: 13px
+	color: #60686f
+	padding-left: 9px
+	padding-top: 4px
+	
+.slider__buttons
+	+flex
+	position: absolute
+	bottom: 13px
+	right: 8px
+	z-index: 111 
+	margin-right: 10px
+
+.slider__next, .slider__prev
+	width: 30px
+	height: 30px
+	background-color: #ffffff
+	-webkit-border-radius: 50% 
+	border-radius: 50% 
+	margin-left: 8px
+	cursor: pointer
+
+	svg
+		position: relative
+		left: 7px
+		top: 7px

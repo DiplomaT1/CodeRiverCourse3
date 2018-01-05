@@ -1,0 +1,241 @@
+.col-3
+	.post	
+		+rmin(320)
+			border-left: none
+			
+		+rmin(480)
+			+flex
+			-webkit-flex-direction: column
+			-ms-flex-direction: column
+			flex-direction: column
+			-webkit-align-items: center
+			align-items: center
+			
+		+rmin(920)
+			display: block
+			border-left: 1px solid #dcdee0
+
+.main-content	
+	width: 100%
+	
+.common-title
+
+	h2
+		text-transform: uppercase
+		font-size: 20px		
+		font-weight: 400 
+		letter-spacing: 0.4px
+	h4
+		
+		font-weight: 400 
+		letter-spacing: 0.26px
+		font-family: Roboto Thin
+		
+		+rmin(320)
+			font-size: 11px
+			
+		+rmin(1200)
+			font-size: 13px
+
+.post
+	+rmin(320)
+		border-bottom: 1px solid #dcdee0
+		padding-left: 10px
+		padding-top: 15px
+		padding-bottom: 15px
+		
+	+rmin(480)
+		border-bottom: none
+		
+	+rmin(1600)
+		padding-left: 30px
+		padding-top: 23px
+		padding-bottom: 30px
+	
+.post__title
+	h2
+		color: #383e42 
+		
+	h4
+		color: #5c656c
+		padding-bottom: 32px
+			
+.post__link
+	margin-bottom: 26px
+	
+	h3
+		font-size: 17px
+		color: #2B5F96
+		font-weight: 400
+		margin-bottom: 7px
+		letter-spacing: 0.34px		
+		&:hover
+			color: #0A4FE9
+			
+	p
+		font-size: 12px
+		color: #5c656c
+		letter-spacing: 0.14px
+		
+.main-icon
+	svg
+		width: 2em
+		height: 2em
+		
+.post__icon
+	float: right
+	
+	svg
+		fill: #99a1a7	
+		margin-top: 5px
+		
+	+rmin(320)
+		margin-right: 0
+		
+	+rmin(480)
+		margin-right: 14px
+		
+	+rmin(700)
+		margin-right: 23px
+		
+.common-btn
+	+flex
+	height: 100%
+	border-radius: 15px
+	border: 1px solid #dcdee0
+	background-color: transparent	
+	cursor: pointer
+	font-family: Roboto Thin
+	color: #2e3236
+	-webkit-align-items: center 
+	align-items: center 
+	-webkit-justify-content: center 
+	justify-content: center 
+	
+	&:hover
+		background-color: #DEDEDE
+
+.post__button
+	width: 73px
+	height: 21px
+	font-size: 10px
+	margin-left: -3px
+
+.getstarted
+	background-color: #60686f
+	+flex
+	-webkit-justify-content: center
+	justify-content: center
+	height: 79px
+	-webkit-align-items: center
+	align-items: center
+	
+	+rmin(320)
+		padding-left: 10px
+		
+	+rmin(1200)
+		padding-left: 14px
+	
+.getstarted__button		
+	height: 26px
+	
+	+rmin(320)
+		font-size: 10px
+		white-space: nowrap
+		width: 90px
+		margin-left: 7px
+		margin-right: 5px
+		
+	+rmin(1200)
+		font-size: 13px	
+		margin-left: 29px
+		width: 111px
+		
+	.common-btn
+		border: 1px solid #848A90 
+	
+	a	
+		color: #FFF
+		
+	&:hover
+		a
+			color: #000 
+
+.getstarted__icon	
+	margin-top: 5px
+	
+	svg
+		fill: #fff
+		
+	+rmin(320)
+		margin-right: 7px
+		
+	+rmin(1200)
+		margin-right: 14px
+
+		
+.getstarted__title
+	h2
+		color: #FFF
+		margin-top: -4px
+		
+		+rmin(320)
+			font-size: 15px
+			
+		+rmin(1300)
+			font-size: 20px
+	h4
+		padding: 0
+		color: #FFF			
+		margin-top: -2px
+	
+.post__small-title
+	+rmin(320)
+		margin-bottom: 20px
+	+rmin(920)
+		margin-bottom: 6px
+	
+.small-title
+	+flex
+
+.small-title__icon
+	svg
+		fill: #959da3
+		width: 1.2em
+		height: 1.2em
+
+.small-title__h3
+	color: #383e42
+	font-size: 17px
+	letter-spacing: 0.34px
+	margin-left: 7px
+
+.post__square-link
+	+flex
+	-webkit-flex-wrap: wrap
+	-ms-flex-wrap: wrap
+	flex-wrap: wrap
+	margin-top: 37px
+	
+	.square-link
+		margin-right: 20px
+
+.square-link
+	width: 111px
+	height: 111px
+	border: 1px solid #dcdee0
+	
+.square-link__h3
+	padding-left: 15px
+	padding-top: 15px
+	font-size: 17px
+	color: #383e42
+	font-family: Roboto
+	font-weight: 400
+
+.square-link__button
+	margin-top: 36px
+	margin-left: 15px
+	
+.post--lower
+	margin-top: 4px
